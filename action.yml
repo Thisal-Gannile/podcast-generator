@@ -1,16 +1,16 @@
 name: "Podcast Generator"
 author: "Thisal Gannile"
-description: " Generates a feed for a podcast from a YAML file"
+description: "Generates a feed for a podcast from a YAML file."
 runs:
   using: "docker"
-  image: "./Dockerfile"
+  image: "./Dockerfile" # Correct path to Dockerfile
 branding:
   icon: "git-branch"
   color: "red"
 inputs:
   email: 
-    description: "The commiter's email address"
+    description: "The committer's email address."
     required: true
   name:
-    description: "The commiter's name"
+    description: "The committer's name."
     required: true
