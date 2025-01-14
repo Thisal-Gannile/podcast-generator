@@ -3,7 +3,7 @@ author: "Thisal Gannile"
 description: " Generates a feed for a podcast from a YAML file"
 runs:
   using: "docker"
-  image: "Dockerfile"
+  image: "./Dockerfile"
 branding:
   icon: "git-branch"
   color: "red"
@@ -11,8 +11,6 @@ inputs:
   email: 
     description: "The commiter's email address"
     required: true
-    default: ${{ github.actor }}@localhost
   name:
     description: "The commiter's name"
     required: true
-    default: ${{ github.actor }}
